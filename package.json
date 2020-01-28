@@ -1,0 +1,27 @@
+{
+  "name": "weather-app-v2",
+  "version": "1.0.0",
+  "description": "A weather app that uses the Darksy API and mapbox API with node and express",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stelthdroid8/weather-app-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stelthdroid8/weather-app-v2/issues"
+  },
+  "homepage": "https://github.com/stelthdroid8/weather-app-v2#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
