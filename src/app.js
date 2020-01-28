@@ -1,29 +1,21 @@
 require('dotenv').config();
+
 const express = require('express');
+const path = require('path');
+
+const indexRoutes = require('./routes/index');
 
 const port = process.env.PORT || 3000;
+const publicDir = path.join(__dirname, '../public');
 
 const app = express();
 
-//---------
-// ROUTES
-//---------
-app.get('/', (req, res) => {
-  res.send('ROOT');
-});
+app.set('view engine', 'hbs');
 
-app.get('/help', (req, res) => {
-  res.send('HELP PAGE');
-});
+app.use(express.static(publicDir));
 
-app.get('/about', (req, res) => {
-  res.send('ABOUT');
-});
-
-app.get('/weather', (req, res) => {
-  res.send('WEATHER');
-});
-
+app.use(indexRoutes);
+//---------------------
 //express configuration
 app.listen(port, () => {
   console.log('up on port: ', port);
