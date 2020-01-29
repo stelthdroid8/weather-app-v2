@@ -43,3 +43,17 @@ header a {
 header a:visited {
   color: #777777;
 }
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  border-radius: 4px;
+  background-color: #888888;
+  color: white;
+  padding: 8px;
+}
