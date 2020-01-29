@@ -6,7 +6,7 @@ router = express.Router();
 //---------
 router.get('/', (req, res) => {
   res.render('index', {
-    title: 'Weather App',
+    title: 'Weather',
     name: 'Brandon Kennedy'
   });
 });
