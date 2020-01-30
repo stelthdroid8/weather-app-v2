@@ -55,15 +55,6 @@ router.get('/weather', (req, res) => {
   );
 });
 
-// just test route
-// router.get('/products', (req, res) => {
-//   if (!req.query.search) {
-//     return res.send({ error: 'You must provide a search term.' });
-//   }
-
-//   res.send({ products: [] });
-// });
-
 router.get('/help/*', (req, res) => {
   res.render('404', {
     title: '404',
