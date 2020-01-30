@@ -45,6 +45,13 @@ header a:visited {
   color: #777777;
 }
 
+a,
+a:visited {
+  color: #444444;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
 input {
   border: 1px solid #cccccc;
   padding: 8px;
